@@ -23,6 +23,10 @@ public class CameraFollowBehavior : MonoBehaviour
    private void Start()
    {
       cam = GetComponent<Camera>();
+      if (targets.Count==0)//this smooths things out in case you forgot to manually add player
+      {
+         targets.Add(GameObject.Find("Player").transform);
+      }
    }
 
    private void LateUpdate()

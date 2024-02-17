@@ -5,7 +5,8 @@ public class DropBeh : MonoBehaviour
 {
     public UnityEvent death;
     public GameObject parent;
-     public void OnTriggerEnter(Collider other)
+
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))//dont execute for everything
         {

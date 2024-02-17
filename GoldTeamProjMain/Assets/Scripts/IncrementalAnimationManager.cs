@@ -1,7 +1,5 @@
 using UnityEngine;
 
-
-
 public class IncrementalAnimationManager : MonoBehaviour
 {
     private Animator targetAnimator;
@@ -23,10 +21,7 @@ public class IncrementalAnimationManager : MonoBehaviour
             combo = targetAnimator.GetInteger(parameterName);
             combo++;
             targetAnimator.SetInteger(parameterName,combo);
-            
         }
-        
-        
     }
     
     public void DeincrementAnim()
@@ -37,13 +32,7 @@ public class IncrementalAnimationManager : MonoBehaviour
             combo = targetAnimator.GetInteger(parameterName);
             combo--;
             targetAnimator.SetInteger(parameterName,combo);
-            
-            
-            
-            
         }
-        
-        
         
     }
     public void ResetAnim()
