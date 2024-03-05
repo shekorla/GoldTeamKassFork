@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class campBeh : MonoBehaviour
@@ -14,8 +15,11 @@ public class campBeh : MonoBehaviour
             looping = 0;
             foreach (var item in babies)
             {
-                babies[looping].attack();
-                looping++;
+                if (babies[looping].IsDestroyed()==false)//dont yell at corpses
+                {
+                    babies[looping].attack(); 
+                    looping++;
+                }
             }
         }
     }
@@ -27,7 +31,11 @@ public class campBeh : MonoBehaviour
             looping = 0;
             foreach (var item in babies)
             {
-                babies[looping].goHome();
+                if (babies[looping].IsDestroyed()==false)//dont yell at corpeses
+                {
+                    babies[looping].goHome();
+                    looping++;
+                }
             }
         }
     }

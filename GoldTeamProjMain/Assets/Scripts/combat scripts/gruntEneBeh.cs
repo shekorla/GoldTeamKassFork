@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -50,34 +51,49 @@ public class gruntEneBeh : MonoBehaviour
 
     public void attack()//add code here so if they are close enough they will take a swipe
     {
-        agent.SetDestination(playerPos.position);
         StopCoroutine(patrolLoop());
-        if (PatrolingEnemy==true)
+        if (this.IsDestroyed()==false) //if we are dead stop working)
         {
-            currentlyPatroling = false;
+            agent.SetDestination(playerPos.position);
+            if (PatrolingEnemy==true)
+            {
+                currentlyPatroling = false;
+            }
         }
+        
     }
 
     public void goHome()
     {
-        agent.SetDestination(startLoc.position);
-        if (PatrolingEnemy==true)
+
+        if (this.IsDestroyed()==false) //if we are dead stop working)
         {
-            currentlyPatroling = true;
-            StartCoroutine(patrolLoop());
+            agent.SetDestination(startLoc.position);
+            if (PatrolingEnemy == true)
+            {
+                currentlyPatroling = true;
+                StartCoroutine(patrolLoop());
+            }
         }
+        
     }
     
 
-
     private IEnumerator patrolLoop()
     {
+        if (this.IsDestroyed()==true) //if we are dead stop working
+        {
+            yield break;
+        }
         looping = 0;
         while (currentlyPatroling==true)
         {
             if (agent.hasPath==false)
             {
-                agent.SetDestination(editPoints[looping]);
+                if (this.IsDestroyed()==false) //if we are dead stop working
+                {
+                    agent.SetDestination(editPoints[looping]);
+                }
                 looping++;
                 if (looping>=points.Count)
                 {   //reset at the end of the list

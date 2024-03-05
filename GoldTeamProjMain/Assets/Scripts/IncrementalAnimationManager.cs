@@ -1,6 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 
 public class IncrementalAnimationManager : MonoBehaviour
@@ -24,19 +23,23 @@ public class IncrementalAnimationManager : MonoBehaviour
             combo = targetAnimator.GetInteger(parameterName);
             combo++;
             targetAnimator.SetInteger(parameterName,combo);
-            print(combo);
+            
         }
-        
-        
     }
     
     public void DeincrementAnim()
     {
-        
+
+        if (combo > 0 )
+        {
             combo = targetAnimator.GetInteger(parameterName);
             combo--;
             targetAnimator.SetInteger(parameterName,combo);
-            print(combo);
+            
+            
+            
+            
+        }
         
     
         
@@ -44,7 +47,7 @@ public class IncrementalAnimationManager : MonoBehaviour
     public void ResetAnim()
     {
         combo = 0; 
-        print("reset");
+        
         targetAnimator.SetInteger(parameterName,0);
     }
 }

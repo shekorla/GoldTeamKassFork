@@ -42,7 +42,6 @@ public class HunterEneBeh : MonoBehaviour
         while (Vector3.Distance(transform.position,playerPos.position)>0)//if you are not on top of player
         {
             agent.SetDestination(playerPos.position);
-            Debug.Log(agent.remainingDistance);
             if (agent.remainingDistance<=attackRange)
             {   //if you're close enough to attack then stop moving and hit it
                 agent.isStopped = true;
