@@ -6,7 +6,8 @@ public class BilboardBehavior : MonoBehaviour
 
     private void Awake()
     {
-        focusCam = GameObject.Find("MainCamera");
+        focusCam = GameObject.Find("MainCamera").GetComponent<Camera>();
+
     }
 
     public void LateUpdate()
