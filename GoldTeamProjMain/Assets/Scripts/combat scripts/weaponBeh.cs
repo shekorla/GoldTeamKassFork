@@ -29,7 +29,6 @@ public class weaponBeh : MonoBehaviour
             Debug.Log(parent+"parent       target"+target);
             if (parent!=target)//stop hitting yourself
             {
-                
                 target.hitSomething(other.gameObject);
             }
         }
