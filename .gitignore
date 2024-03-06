@@ -76,3 +76,7 @@ GoldTeamProjMain/UserSettings/
 *.idea
 
 .idea/.idea.GoldTeamKassFork.dir/.idea/
+
+GoldTeamProjMain/UserSettings/Layouts/
+
+GoldTeamProjMain/heu_session.txt
