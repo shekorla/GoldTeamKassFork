@@ -18,6 +18,10 @@ public class JoystickPlayerControl : MonoBehaviour
     private void Start()
     {
         canPlayerMove = true;
+        if (variableJoystick == null)
+        {
+            variableJoystick = GameObject.Find("Variable Joystick").GetComponent<VariableJoystick>();
+        }
     }
 
     public void FixedUpdate()

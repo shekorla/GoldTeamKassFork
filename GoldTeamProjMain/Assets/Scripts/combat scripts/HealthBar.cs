@@ -3,10 +3,9 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     public GameObject valImg;
-    public int maxVal;
 
-    private RectTransform rectangle, hpRect;
-    private Vector2 pos, size;
+    private RectTransform rectangle, hpRect;//rectangle is the full healthbar, hp rect is the green portion
+    private Vector2 size;
     private void Awake()//awake happens before start
     {
         rectangle = GetComponent<RectTransform>();
@@ -15,24 +14,17 @@ public class HealthBar : MonoBehaviour
 
     public void maxChange(int newMax)  //upgrades the viz to match the stats
     {
-        maxVal = newMax;
-        pos = rectangle.anchoredPosition;
-        size = rectangle.sizeDelta;
-        pos.x=((maxVal/2)+10);
-        size.x = maxVal;
-        rectangle.anchoredPosition = pos;
-        rectangle.sizeDelta = size;
-        hpRect.sizeDelta = size;
-        updateVal(maxVal);
+        size = rectangle.sizeDelta;//get current width & height
+        size.x = newMax;//set width to new max health
+        rectangle.sizeDelta = size;//update the actual canvas element
+        hpRect.sizeDelta = size;//update the green bit
+        updateVal(newMax);
     }
 
-    public void updateVal(int currentVal)//updates the healthy image to shrink
+    public void updateVal(int currentVal)//updates the healthy image
     {
-        pos.y = 0;
-        pos.x = (currentVal / 2);
         size = hpRect.sizeDelta;
-        size.x=(currentVal);//shrink by the perportion of hp lost
+        size.x=(currentVal);
         hpRect.sizeDelta = size;
-        hpRect.anchoredPosition = pos;
     }
 }

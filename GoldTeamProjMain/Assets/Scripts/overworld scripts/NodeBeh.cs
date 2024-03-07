@@ -4,11 +4,12 @@ public class NodeBeh : MonoBehaviour
 {
     [Tooltip("add in any drops that can come from this")]
     public GameObject[] dropPrefab;
+    [Tooltip("player is 20-ish tall")]
+    public float spawnHeight;
     [Header("pls dont touch it will break the clones")]
     public GameObject parent;
     
-    [Tooltip("player is 20-ish tall")]
-    public float spawnHeight; 
+     
     
     private GameObject drops;
     private Rigidbody bouncy;

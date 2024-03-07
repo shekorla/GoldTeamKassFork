@@ -25,6 +25,8 @@ public class IncrementalAnimationManager : MonoBehaviour
             targetAnimator.SetInteger(parameterName,combo);
             
         }
+        
+        
     }
     
     public void DeincrementAnim()
@@ -41,7 +43,7 @@ public class IncrementalAnimationManager : MonoBehaviour
             
         }
         
-    
+        
         
     }
     public void ResetAnim()
