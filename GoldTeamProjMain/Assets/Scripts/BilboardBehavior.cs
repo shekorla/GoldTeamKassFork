@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class BilboardBehavior : MonoBehaviour
 {
-    public GameObject focusCam;
+    public Camera focusCam;
 
-    private void Awake()
+    private void Start()
     {
-        focusCam = GameObject.Find("MainCamera");
+        focusCam = GameObject.Find("MainCamera").GetComponent<Camera>();
+
     }
 
-    public void LateUpdate()
+    public void Billboard()
     {
         transform.LookAt(focusCam.transform.position, -Vector3.up);
+        
     }
 
     

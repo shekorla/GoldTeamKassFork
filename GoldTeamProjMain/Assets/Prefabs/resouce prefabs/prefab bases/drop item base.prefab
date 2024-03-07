@@ -257,19 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f258c5b87b34648b4b67482d75fd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  death:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5c94bf7fd61d49f4ebdfe3125c07ddc9, type: 2}
-        m_TargetAssemblyTypeName: playerInvent, Assembly-CSharp
-        m_MethodName: addFuel
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  value: 1
+  type: wood
+  bag: {fileID: 11400000, guid: 5c94bf7fd61d49f4ebdfe3125c07ddc9, type: 2}
   parent: {fileID: 417477440209052701}
