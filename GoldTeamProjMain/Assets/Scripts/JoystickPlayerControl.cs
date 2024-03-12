@@ -45,7 +45,7 @@ public class JoystickPlayerControl : MonoBehaviour
         {
             isIdleAnimStart = false;
             StopEvent.Invoke();
-            print("Stopped!");
+            //print("Stopped!");
         }
         
         }

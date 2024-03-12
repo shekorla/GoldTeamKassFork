@@ -1,13 +1,14 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class DropBeh : MonoBehaviour
 {
-    public int value;
+    public int value,despawnTime;
     [Tooltip("lowercase or it wont work")]
     public string type;
     public playerInvent bag;
     public GameObject parent;
+
 
     public void OnTriggerEnter(Collider other)
     {
@@ -19,4 +20,8 @@ public class DropBeh : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        Destroy(parent,despawnTime);
+    }
 }

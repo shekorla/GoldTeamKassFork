@@ -7,19 +7,18 @@ using UnityEngine.Events;
 
 public class gruntEneBeh : MonoBehaviour
 {
-    public float atkRng;
     public GameObject parent;
     
-    [Tooltip("check this if this enemy is suppose to patrol an area")]
+    [Header("check this if this enemy is suppose to patrol an area")]
     public bool PatrolingEnemy;
     
-    [Tooltip("locations in order for patrol route")]
+    [Header("locations in order for patrol route")]
     public List<Vector3> points;
 
-    [Tooltip("pls ignore it needs to be public for math")]
+    [Header("pls ignore it needs to be public for math")]
     public List<Vector3> editPoints;
     
-    public UnityEvent dmgEv, deathEv, atkEv;
+    public UnityEvent atkEv;
 
     private NavMeshAgent agent;
     private bool currentlyPatroling;
@@ -49,7 +48,16 @@ public class gruntEneBeh : MonoBehaviour
         }
     }
 
-    public void attack()//add code here so if they are close enough they will take a swipe
+    public void attack()//called from atk range trigger
+    {
+        atkEv.Invoke();//use this to que up atk anims and such
+        if (this.IsDestroyed()==false) //if we are dead stop working)
+        {
+            agent.isStopped = true;//stop moving
+        }
+        
+    }
+    public void hunt()//called from camp to go get player
     {
         StopCoroutine(patrolLoop());
         if (this.IsDestroyed()==false) //if we are dead stop working)

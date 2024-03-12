@@ -53,7 +53,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417477440209052701, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: m_Name
-      value: 20SecEnergy
+      value: 20 timer droop
+      objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458955, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 417477440480458955, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458955, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_Color.g
+      value: 0.56706274
+      objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458955, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2626913
       objectReference: {fileID: 0}
     - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: type
@@ -62,6 +78,10 @@ PrefabInstance:
     - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: value
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: despawnTime
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: death.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

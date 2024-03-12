@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class TriggerBehavior : MonoBehaviour
 {
-    public UnityEvent triggerStartEvent, triggerEndEvent,playerEvent;
+    public UnityEvent triggerStartEvent, triggerEndEvent,playerEvent, weaponEvent;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -11,6 +11,11 @@ public class TriggerBehavior : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerEvent.Invoke();
+        }
+
+        if (other.CompareTag("Weapon"))
+        {
+            weaponEvent.Invoke();
         }
     }
 
