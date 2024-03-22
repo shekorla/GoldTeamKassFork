@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3991426220275648322, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991426220275648331, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
       propertyPath: variableJoystick
       value: 
@@ -190,7 +194,8 @@ PrefabInstance:
       propertyPath: deathEv.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2008769472}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3991426220275648322, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
 --- !u!4 &1444429 stripped
 Transform:
@@ -1969,6 +1974,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3158930914388527720, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158930914685797265, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3158930916103405158, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
       propertyPath: m_RootOrder
       value: 7

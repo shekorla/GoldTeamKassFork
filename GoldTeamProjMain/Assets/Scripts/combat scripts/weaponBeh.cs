@@ -36,7 +36,12 @@ public class weaponBeh : MonoBehaviour
                 hitYou=other.gameObject.GetComponent<combatantBeh>(); 
                 hitYou.TakeDamage(myWeap.Dmg);//let the other know how much dmg to take;
             }
+
+            
         }
-        
+        if (other.CompareTag("enemy"))
+        {
+            Debug.Log("hit plr" );
+        }
     }
 }

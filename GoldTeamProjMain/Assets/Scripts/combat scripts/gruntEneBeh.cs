@@ -62,6 +62,7 @@ public class gruntEneBeh : MonoBehaviour
         StopCoroutine(patrolLoop());
         if (this.IsDestroyed()==false) //if we are dead stop working)
         {
+            agent.isStopped = false;
             agent.SetDestination(playerPos.position);
             if (PatrolingEnemy==true)
             {
@@ -73,9 +74,9 @@ public class gruntEneBeh : MonoBehaviour
 
     public void goHome()
     {
-
         if (this.IsDestroyed()==false) //if we are dead stop working)
         {
+            agent.isStopped = false;
             agent.SetDestination(startLoc.position);
             if (PatrolingEnemy == true)
             {

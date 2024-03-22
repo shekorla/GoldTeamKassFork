@@ -39,12 +39,6 @@ public class combatantBeh : MonoBehaviour
         }
     }
     
-    
-    public void hitSomething(GameObject other)//the weapon calls this on contact
-    {
-        
-    }
-
     public void quickItem(GameObject prefab)
     {
         Instantiate(prefab, this.gameObject.transform.position, this.gameObject.transform.rotation);
