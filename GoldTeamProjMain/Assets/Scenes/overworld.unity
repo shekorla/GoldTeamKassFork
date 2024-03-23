@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   babies:
-  - {fileID: 1490504255}
+  - {fileID: 0}
   - {fileID: 671765724}
 --- !u!1001 &1464257041
 PrefabInstance:
@@ -1390,17 +1390,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1490504255 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3158930914388527727, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
-  m_PrefabInstance: {fileID: 3158930916162765021}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70a5d3e292ec1f43b243d7ad0806ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1561503853

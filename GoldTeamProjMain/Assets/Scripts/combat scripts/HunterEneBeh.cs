@@ -8,12 +8,10 @@ using UnityEngine.AI;
 public class HunterEneBeh : MonoBehaviour
 {
     [Header("if they can see you they will follow")]
-    public UnityEvent atkEv;//call the combatant event you need to pause for the attk animantion
+    public UnityEvent atkEv,walkEv,idleEv;// use to trigger animations
     
     [Tooltip("about 3-5 less than the hunt range collider radius")]
     public float   sightRange;
-    [Tooltip("red bubble about the lenght of the weapon range")]
-    public float    attackRange;
     
     private Transform playerPos;
     private NavMeshAgent agent;
@@ -30,6 +28,7 @@ public class HunterEneBeh : MonoBehaviour
 
     public void startHunt()
     {
+        walkEv.Invoke();
         if (hunting==false)
         {
             agent.SetDestination(playerPos.position);
@@ -66,6 +65,7 @@ public class HunterEneBeh : MonoBehaviour
             }
             else  //they have escaped stop following
             {
+                idleEv.Invoke();
                 hunting = false;
                 break;
             }

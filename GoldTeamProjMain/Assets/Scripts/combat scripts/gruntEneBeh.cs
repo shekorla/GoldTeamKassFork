@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,7 +19,7 @@ public class gruntEneBeh : MonoBehaviour
     [Header("pls ignore it needs to be public for math")]
     public List<Vector3> editPoints;
     
-    public UnityEvent atkEv;
+    public UnityEvent atkEv,walkEv;//used for anims
 
     private NavMeshAgent agent;
     private bool currentlyPatroling;
@@ -48,6 +49,7 @@ public class gruntEneBeh : MonoBehaviour
         }
     }
 
+
     public void attack()//called from atk range trigger
     {
         atkEv.Invoke();//use this to que up atk anims and such
@@ -59,6 +61,7 @@ public class gruntEneBeh : MonoBehaviour
     }
     public void hunt()//called from camp to go get player
     {
+        walkEv.Invoke();
         StopCoroutine(patrolLoop());
         if (this.IsDestroyed()==false) //if we are dead stop working)
         {
@@ -74,6 +77,7 @@ public class gruntEneBeh : MonoBehaviour
 
     public void goHome()
     {
+        walkEv.Invoke();
         if (this.IsDestroyed()==false) //if we are dead stop working)
         {
             agent.isStopped = false;
@@ -90,6 +94,7 @@ public class gruntEneBeh : MonoBehaviour
 
     private IEnumerator patrolLoop()
     {
+        walkEv.Invoke();
         if (this.IsDestroyed()==true) //if we are dead stop working
         {
             yield break;
