@@ -1091,9 +1091,8 @@ MonoBehaviour:
         m_CallState: 2
 --- !u!114 &2141337028
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8192484995673130994, guid: 5a02190b99490334ba33128cb0f23fda, type: 3}
+  m_PrefabInstance: {fileID: 3862674695419828361}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141337025}
   m_Enabled: 1
