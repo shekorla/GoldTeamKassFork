@@ -8,6 +8,8 @@ public class TriggerBehavior : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         triggerStartEvent.Invoke();
+        //i hope you dont mind me adding these it just checks what it is being hit by
+        print("collision");
         if (other.CompareTag("Player"))
         {
             playerEvent.Invoke();
