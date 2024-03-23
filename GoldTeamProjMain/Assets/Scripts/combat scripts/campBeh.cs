@@ -17,7 +17,7 @@ public class campBeh : MonoBehaviour
             {
                 if (babies[looping].IsDestroyed()==false)//dont yell at corpses
                 {
-                    babies[looping].attack(); 
+                    babies[looping].hunt(); 
                     looping++;
                 }
             }

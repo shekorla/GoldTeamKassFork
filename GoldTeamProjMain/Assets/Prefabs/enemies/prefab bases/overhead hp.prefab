@@ -397,7 +397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valImg: {fileID: 5743800608797280118}
-  maxVal: 100
 --- !u!1 &5743800609421240314
 GameObject:
   m_ObjectHideFlags: 0
