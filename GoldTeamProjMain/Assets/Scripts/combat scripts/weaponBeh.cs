@@ -39,9 +39,5 @@ public class weaponBeh : MonoBehaviour
 
             
         }
-        if (other.CompareTag("enemy"))
-        {
-            Debug.Log("hit plr" );
-        }
     }
 }

@@ -802,6 +802,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561572417}
   m_CullTransparentMesh: 1
+--- !u!114 &671765724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3158930916251374372, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
+  m_PrefabInstance: {fileID: 3158930916162765021}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70a5d3e292ec1f43b243d7ad0806ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &734824230 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4602632399349387954, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
@@ -1197,6 +1208,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307585248}
   m_CullTransparentMesh: 1
+--- !u!1 &1392342579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3158930916103405162, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
+  m_PrefabInstance: {fileID: 3158930916162765021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1392342583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392342579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1bdd5777f8e0044a807b14cfc2bc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  babies:
+  - {fileID: 1490504255}
+  - {fileID: 671765724}
 --- !u!1001 &1464257041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1359,6 +1390,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1490504255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3158930914388527727, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
+  m_PrefabInstance: {fileID: 3158930916162765021}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70a5d3e292ec1f43b243d7ad0806ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1561503853
@@ -2030,7 +2072,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy Camp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3158930916103405153, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8ead4bd6e1dbf845ba4a32cf3c91432, type: 3}
 --- !u!1001 &3672578616395850662
 PrefabInstance:
@@ -2099,6 +2142,10 @@ PrefabInstance:
       propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2008769472}
+    - target: {fileID: 3672578616042373220, guid: 6f17a09b338f54143a16e753ee4198ca, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Town
+      objectReference: {fileID: 0}
     - target: {fileID: 3672578616042373223, guid: 6f17a09b338f54143a16e753ee4198ca, type: 3}
       propertyPath: m_Name
       value: warpPoint
