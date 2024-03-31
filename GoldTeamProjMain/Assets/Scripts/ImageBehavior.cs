@@ -21,7 +21,8 @@ public class ImageBehavior : MonoBehaviour
     }
 
     
-    public void UpdateImage(FloatData data) //this is the main part of the code, you'll want to call this method every time you want the health bar to update, after you've already added/subtracted health. I usually call on it using either a unity event or a game action object.
+    public void UpdateImage(FloatData data) //this is the main part of the code, you'll want to call this method every time you want the health bar to update,
+        //after you've already added/subtracted health. I usually call on it using either a unity event or a game action object.
     {
         imageObj.fillAmount = (data.value / maxHealth.value);
 
