@@ -4,15 +4,30 @@ using UnityEngine.Events;
 
 public class ConfigureRoom : MonoBehaviour
 {
-    public GameObject nWall, sWall, eWall, wWall, floor;
-    public UnityEvent SwapEvent ;
+    public GameObject nWall, sWall, eWall, wWall, floor,plr;
+    public UnityEvent swapEv;
+    public RoomData newRoom;
 
     private int loopingNum;
     public List<GameObject> currentMisc;
 
-    //this is a funtion that can be called from anything
-    public void setup(RoomData newRoom)//we can create room datas to quickly build new areas
+    public void Start()
     {
+        newRoom.spawnPoint = new Vector3(0, 0, -230);// start just outside of city
+        swapEv.Invoke();
+        setup();
+    }
+
+    public void swap(RoomData newby)
+    {
+        newRoom = newby;
+        swapEv.Invoke();//use this to get the loading screen
+        setup();
+    }
+    
+    public void setup()//we can create room datas to quickly build new areas
+    {
+        plr.transform.position = newRoom.spawnPoint;
         foreach (var thingy in currentMisc)
         {
             Destroy(thingy.gameObject);
@@ -32,17 +47,13 @@ public class ConfigureRoom : MonoBehaviour
         }
     }
 
+
     private void SetWall(GameObject prefabb,GameObject Parentt)//creates an instance of the wall prefab as a child
     {//its easier to swap game objs than to change tex so the floor gets changed using this method too
         if (Parentt.transform.childCount!=0)
         {
-            Destroy(Parentt.transform.GetChild(0));//clears out old wall
+            Destroy(Parentt.transform.GetChild(0).gameObject);//clears out old wall
         }
         Instantiate(prefabb,Parentt.transform);//new wall as child
-    }
-    
-    public void Start()
-    {
-        SwapEvent.Invoke();
     }
 }

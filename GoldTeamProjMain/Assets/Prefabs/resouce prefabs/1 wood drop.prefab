@@ -53,7 +53,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417477440209052701, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: m_Name
-      value: 1 wood
+      value: 1 wood drop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: bag
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c94bf7fd61d49f4ebdfe3125c07ddc9, type: 2}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: type
+      value: wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: death.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

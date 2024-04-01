@@ -55,6 +55,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 10 wood drop
       objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458952, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458952, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 417477440480458955, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2f914bcf69bdadb4682739dc06bb275c, type: 3}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: value
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: death.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: addWood

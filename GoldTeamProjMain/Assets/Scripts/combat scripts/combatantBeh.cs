@@ -1,36 +1,37 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class combatantBeh : MonoBehaviour
 {
-    //kassidy you still need to go back and fix the enemies code
+    //add this code to the being, an enemy the player etc. on the obj that has the hurt box, it should be a trigger
+        //the weapon will handle if it hits something or not. the weapon will need a collider/weapon beh script
+        //this code essentially handels hp/death/loot
     
-    //add this code to the being, an enemey the player etc. 
-        //the weaapon will handle if it hits something or not. the weapon will need an action funtion
-        //could be turning on a collider or launching a projectile
-    
-    public int maxHp, currentHp;
-    public weaponSO myWeap;
+    public int maxHp=100, currentHp=100;
+    public HealthBar myHPbar;
 
-    [Header("use this to give rewards for kill")]   //create a pref that shows up, drops goodies and dies
+    [Header("use this to give rewards for killing me")]   //need to create a pref that shows up, drops goodies and dies
     public UnityEvent deathEv;
-    [Header("use this to que up atk anim")]
-    public UnityEvent attackEv;
     [Header("use this for when I get hit")]
     public UnityEvent dmgEv;
 
-    private combatantBeh hitYou;
+    
     private void Start()
     {
         currentHp = maxHp;
+        if (myHPbar==null)//yes i know im forgetful, stop giving me error codes!
+        {
+            myHPbar = GetComponentInChildren<HealthBar>();
+        }
+        myHPbar.maxChange(maxHp);
     }
 
     public void TakeDamage(int val)
     {
         // can add complex code here to change for atk dmg vs def etc.
         currentHp -= val;
-        dmgEv.Invoke(); //this calls the health bar update
+        myHPbar.updateVal(currentHp);
+        dmgEv.Invoke();
         if (currentHp <= 0)
         {
             deathEv.Invoke();
@@ -38,10 +39,15 @@ public class combatantBeh : MonoBehaviour
         }
     }
     
-    private void attack(GameObject other)//the animation gets called from the obj, the weapon tells if it made contact
+    public void quickItem(GameObject prefab)
     {
-        
-        hitYou=other.gameObject.GetComponent<combatantBeh>();
-        hitYou.TakeDamage(myWeap.Dmg);
+        Instantiate(prefab, this.gameObject.transform.position, this.gameObject.transform.rotation);
+    }
+
+    public void UpgradeHp(int newval)
+    {
+        maxHp = newval;
+        currentHp = maxHp;
+        myHPbar.maxChange(maxHp);
     }
 }

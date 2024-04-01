@@ -3,9 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangeBehavior : MonoBehaviour
 {
-    public IntData sceneNum;
+    //public IntData sceneNum;
 
-    public void GameStart()
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+    //this is all the old code from JM keeping it here for ref, probs need to scrap it at some point
+    /*public void GameStart()
     {
         SceneManager.LoadScene("Scenes/LevelScene"+sceneNum.value );
     }
@@ -26,5 +31,5 @@ public class SceneChangeBehavior : MonoBehaviour
     public void End()
     {
         SceneManager.LoadScene("Scenes/EndScene");
-    }
+    }*/
 }

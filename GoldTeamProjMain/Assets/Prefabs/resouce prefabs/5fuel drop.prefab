@@ -57,7 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417477440209052701, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
       propertyPath: m_Name
-      value: 5fuel
+      value: 5fuel drop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: type
+      value: fuel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445634744860609586, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
+      propertyPath: value
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c21cc0b8a216cca4ba7924a116cbdf66, type: 3}
