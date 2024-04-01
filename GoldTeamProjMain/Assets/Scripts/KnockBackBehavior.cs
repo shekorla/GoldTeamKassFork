@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class KnockBackBehavior : MonoBehaviour
 {
     private Rigidbody rb;
-    // Start is called before the first frame update
+    // nothing too fancy here, shoves an object backward (currently at a hardcoded rate, planning to fix that soon)
     void Start()
     {
         rb = GetComponent<Rigidbody>();

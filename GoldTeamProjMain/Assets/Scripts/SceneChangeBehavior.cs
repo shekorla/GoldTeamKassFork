@@ -10,6 +10,8 @@ public class SceneChangeBehavior : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
     //this is all the old code from JM keeping it here for ref, probs need to scrap it at some point
+    
+    //yeah, this was pretty bad code. thank you for making a much simpler (and smarter) function!  -JM
     /*public void GameStart()
     {
         SceneManager.LoadScene("Scenes/LevelScene"+sceneNum.value );
@@ -32,4 +34,6 @@ public class SceneChangeBehavior : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/EndScene");
     }*/
+    
+    
 }
