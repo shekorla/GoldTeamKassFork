@@ -3,13 +3,13 @@ using UnityEngine.Events;
 
 public class TriggerBehavior : MonoBehaviour
 {
-    public UnityEvent triggerStartEvent, triggerEndEvent,playerEvent, weaponEvent;
+    public UnityEvent triggerStartEvent, triggerEndEvent,playerEvent, weaponEvent, parryEvent;
 
     private void OnTriggerEnter(Collider other)
     {
         triggerStartEvent.Invoke();
         //i hope you dont mind me adding these it just checks what it is being hit by
-        print("collision");
+        print("collision: "+other.tag );
         if (other.CompareTag("Player"))
         {
             playerEvent.Invoke();
@@ -17,7 +17,13 @@ public class TriggerBehavior : MonoBehaviour
 
         if (other.CompareTag("Weapon"))
         {
+            
             weaponEvent.Invoke();
+        }
+        
+        if (other.CompareTag("Parry"))
+        {
+            parryEvent.Invoke();
         }
     }
 

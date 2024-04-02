@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675784226}
-  m_LocalRotation: {x: -0.042920887, y: 0.87549657, z: 0.0791495, w: 0.4747621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.093}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5338,6 +5338,57 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 835822556}
+        m_TargetAssemblyTypeName: IncrementalAnimationManager, Assembly-CSharp
+        m_MethodName: ResetAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  parryEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1059901312}
+        m_TargetAssemblyTypeName: KnockBackBehavior, Assembly-CSharp
+        m_MethodName: KnockBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4562365752532985637}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Skull_Stun_Anim
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 835822556}
+        m_TargetAssemblyTypeName: IncrementalAnimationManager, Assembly-CSharp
+        m_MethodName: ResetAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8994552715415946975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5692,6 +5743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090d3d005cb0f1641a3b761dedb3a90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetSpeed: {fileID: 11400000, guid: 9037d565b04a54048a1736f76d53c908, type: 2}
+  Launchspeeds: {fileID: 11400000, guid: a54f41af73a29ce4f86943fbf23f54d7, type: 2}
 --- !u!1 &8950192305332772950
 GameObject:
   m_ObjectHideFlags: 0
