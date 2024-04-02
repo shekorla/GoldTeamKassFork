@@ -20,6 +20,14 @@ public class HealthBar : MonoBehaviour
         hpRect.sizeDelta = size;//update the green bit
         updateVal(newMax);
     }
+    public void maxChangeToIntData(IntData newMax)  //upgrades the viz to match a given Int Data Value. Hope these additions were OK, this way player's max & current can be stored in Scriptable Objects.
+    {
+        size = rectangle.sizeDelta;//get current width & height
+        size.x = newMax.value;//set width to new max health
+        rectangle.sizeDelta = size;//update the actual canvas element
+        hpRect.sizeDelta = size;//update the green bit
+        updateVal(newMax.value);
+    }
 
     public void updateVal(int currentVal)//updates the healthy image
     {
@@ -27,4 +35,12 @@ public class HealthBar : MonoBehaviour
         size.x=(currentVal);
         hpRect.sizeDelta = size;
     }
+    public void updateValueToIntData(IntData obj)//variant that updates the healthy image to a given Intdata's value
+    {
+        size = hpRect.sizeDelta;
+        size.x=(obj.value);
+        hpRect.sizeDelta = size;
+    }  
+    
+    
 }
