@@ -703,30 +703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4730400441463932466, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.00000064453343
-      objectReference: {fileID: 0}
-    - target: {fileID: 4730400441463932466, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.80936
-      objectReference: {fileID: 0}
-    - target: {fileID: 4730400441463932466, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.024399312
-      objectReference: {fileID: 0}
-    - target: {fileID: 5649988269590753480, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.044998772
-      objectReference: {fileID: 0}
-    - target: {fileID: 5649988269590753480, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1121264
-      objectReference: {fileID: 0}
-    - target: {fileID: 5649988269590753480, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.4937198
-      objectReference: {fileID: 0}
     - target: {fileID: 7445580068899091866, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -986,11 +962,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171242301827492573, guid: 5a02190b99490334ba33128cb0f23fda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.42
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 1171242301827492573, guid: 5a02190b99490334ba33128cb0f23fda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 66.4
+      value: -60.3
       objectReference: {fileID: 0}
     - target: {fileID: 1171242301827492573, guid: 5a02190b99490334ba33128cb0f23fda, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1153,18 +1129,6 @@ PrefabInstance:
     - target: {fileID: 6157933671808695967, guid: 732a6809e2934294f8271ff04b1726b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323955789465685303, guid: 732a6809e2934294f8271ff04b1726b9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.809359
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323955789465685303, guid: 732a6809e2934294f8271ff04b1726b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.024398804
-      objectReference: {fileID: 0}
-    - target: {fileID: 8955876211283934157, guid: 732a6809e2934294f8271ff04b1726b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.49372
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732a6809e2934294f8271ff04b1726b9, type: 3}
@@ -1529,6 +1493,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 675784227, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 675784227, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 675784227, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 675784227, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8916703189530511502, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
       propertyPath: m_Name
       value: EnemyBiped
@@ -1592,7 +1572,7 @@ GameObject:
   - component: {fileID: 1997136203}
   - component: {fileID: 1997136202}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
