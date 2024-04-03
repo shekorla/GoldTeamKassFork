@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561952299488555251}
   m_LocalRotation: {x: 0.47267556, y: 0.8811224, z: -0.0067048008, w: 0.012498597}
-  m_LocalPosition: {x: 2.6813965, y: 2.5345035, z: 0.11607361}
+  m_LocalPosition: {x: 2.6814117, y: 2.5345035, z: 0.11606979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146218787940952242}
   m_LocalRotation: {x: 0.47267556, y: 0.8811224, z: -0.0067048008, w: 0.012498597}
-  m_LocalPosition: {x: 2.6813965, y: 2.5345035, z: 0.11607075}
+  m_LocalPosition: {x: 2.6814117, y: 2.5345035, z: 0.11607075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -134,7 +134,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &3158930914685797264
 Transform:
@@ -179,7 +179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 734a9986c6ebbee44b2c4c7b3b677940, type: 2}
+  - {fileID: 2100000, guid: c08e6f263708cec4d83205b626fc3465, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 3158930916103405158}
   - component: {fileID: 3158930916103405157}
   - component: {fileID: 5358902947761765133}
+  - component: {fileID: 1392342583}
   m_Layer: 0
   m_Name: enemy Camp
   m_TagString: Untagged
@@ -313,6 +314,21 @@ MonoBehaviour:
   babies:
   - {fileID: 3158930916251374372}
   - {fileID: 0}
+--- !u!114 &1392342583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158930916103405162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1bdd5777f8e0044a807b14cfc2bc47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  babies:
+  - {fileID: 0}
+  - {fileID: 3158930916251374372}
 --- !u!1 &3158930916251374378
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,21 +451,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Skull_Walk_Anim
-          m_BoolArgument: 0
-        m_CallState: 2
-  idleEv:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6573383556378355529}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: F_Player_Idle_Anim
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &3158930916251374369
@@ -5390,6 +5391,9 @@ MonoBehaviour:
   weaponEvent:
     m_PersistentCalls:
       m_Calls: []
+  parryEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!136 &7986160267149308551
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5471,6 +5475,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   weaponEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  parryEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!136 &4333001421252520629
@@ -10397,7 +10404,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0, y: 4.95, z: -0.010269165}
   m_RotationAtRest: {x: -0.23114192, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: -0.35504723, z: -0.0014419556}
+  - {x: 0, y: -0.35504723, z: -0.0014381409}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
@@ -15321,7 +15328,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0, y: 4.95, z: -0.010269165}
   m_RotationAtRest: {x: -0.23114192, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: -0.35504723, z: -0.001449585}
+  - {x: 0, y: -0.35504675, z: -0.0014419556}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
@@ -20265,21 +20272,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Skull_Walk_Anim
-          m_BoolArgument: 0
-        m_CallState: 2
-  idleEv:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 766322698421708976}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: F_Player_Idle_Anim
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &6876159120904591124

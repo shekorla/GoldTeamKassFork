@@ -18,12 +18,14 @@ MonoBehaviour:
   eWall: {fileID: 1904902720170607474, guid: 928ba933446902c46909c3911a93fe7d, type: 3}
   wWall: {fileID: 2748769717227633501, guid: 3d298e03d163ebd439f0beee98f4ee12, type: 3}
   floor: {fileID: 8329882326169817342, guid: 5391cdfa16f3f2c4081b64564a31cfc1, type: 3}
-  spawnPoint: {x: 0, y: 0, z: -235}
+  spawnPoint: {x: 0, y: 0, z: -230}
   contentObjs:
   - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 6692644350267616039, guid: b20503352b2491a44b74ffec19bc486a, type: 3}
   locations:
-  - {x: -10, y: 0, z: -230}
-  - {x: -15, y: 0, z: -235}
+  - {x: -10, y: 0, z: -220}
+  - {x: -20, y: 0, z: -210}
   - {x: 40, y: 0, z: 50}
+  - {x: 0, y: 10, z: 0}
