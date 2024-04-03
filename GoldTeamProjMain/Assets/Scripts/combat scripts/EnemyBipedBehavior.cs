@@ -4,7 +4,9 @@ using UnityEngine.AI;
 
 
 public class EnemyBipedBehavior : EnemyBase
-//this code is designed to have it's "Think" function called by a coroutine at a set "tic" rate, allowing enemies to react pretty quickly without doing so 60+ times a second. most everything else is handled automatically, but it does need an animatable model with an animator, for attacking to function.
+//this code is designed to have it's "Think" function called by a coroutine at a set "tic" rate,
+// allowing enemies to react pretty quickly without doing so 60+ times a second.
+// most everything else is handled automatically, but it does need an animatable model with an animator, for attacking to function.
 {
     [Header("Entity Management")]
     //establishing the scriptable Objects the enemy will use. Imagebehavior's here to keep the UI Healthbar up to date.
@@ -35,7 +37,8 @@ public class EnemyBipedBehavior : EnemyBase
         agent = GetComponent<NavMeshAgent>();
         playerPos = GameObject.Find("Player").transform;
         
-        //bad code here, set this true so enemies wouldn't lose the player in a combat arena, since aggro isn't really a thing for this game.
+        //bad code here, set this true so enemies wouldn't lose the player in a combat arena,
+        // since aggro isn't really a thing for this game.
         PlayerInSight = true;
         
     }
@@ -65,13 +68,15 @@ public class EnemyBipedBehavior : EnemyBase
         attackEvent.Invoke();
     }
 
-    //this basically runs math to check the player's attacking SO, and subtract that number from the enemy's current health. if enemy health is 0, then call the dying event/ animation
+    //this basically runs math to check the player's attacking SO,
+    // and subtract that number from the enemy's current health. if enemy health is 0, then call the dying event/ animation
     public override void TakeDamage()
     {
         PlayerInSight = true;
         //Danger level in action, lowering the incoming damage from the player.
         EnCurrentHp.value -= (playerCurrentDamage.value/(DangerLevel.value));
-        //the floating enemy healthbars use a "passing" floatdata object to hand off the enemy's current health to the UI system. unity wasn't cooperating when I tried to send it directly from a given enemy. ¯\_(ツ)_/¯
+        //the floating enemy healthbars use a "passing" floatdata object to hand off the enemy's current health to the UI system.
+        // unity wasn't cooperating when I tried to send it directly from a given enemy. ¯\_(ツ)_/¯
         enpassHP.value = EnCurrentHp.value;
         damageEvent.Invoke();
         if (EnCurrentHp.value <= 0)
@@ -80,7 +85,8 @@ public class EnemyBipedBehavior : EnemyBase
         }
     }
 
-        //more holdover code, lets an enemy regenerate HP at a hardcoded rate until it's back to full, then revives. could be usefull for a perpetually healing enemy, but would need some refactoring
+        //more holdover code, lets an enemy regenerate HP at a hardcoded rate until it's back to full, then revives.
+        // could be usefull for a perpetually healing enemy, but would need some refactoring
     public override void Regen()
     {
         if (EnCurrentHp.value >= bipedMaxHp.value)
@@ -96,14 +102,16 @@ public class EnemyBipedBehavior : EnemyBase
         dieEvent.Invoke();
     }
 
-    //calls a "reviving" animation, and increases the enemy's danger level. again could be cool, but It'd be better to just have armored enemies w/ a set damage reduction IMO
+    //calls a "reviving" animation, and increases the enemy's danger level.
+    // again could be cool, but It'd be better to just have armored enemies w/ a set damage reduction IMO
     public override void Respawn()
     {
         RespawnEvent.Invoke();
         DangerLevel.value++;
     }
 
-    //the way this code works, the "thinking" and player targeting handled here, and the forward movement is handled by animations & navmesh agents.  
+    //the way this code works, the "thinking" and player targeting handled here,
+    // and the forward movement is handled by animations & navmesh agents.  
     
     //Every coroutine "tic" the enemy locates the player, and checks to see if it needs to rotate to point towards them.
     //if player's in reach, stop moving & start attacking. 
@@ -135,14 +143,16 @@ public class EnemyBipedBehavior : EnemyBase
 
     }
 
-    //whenever an enemy is enabled in unity, it refreshes it's health to full, and starts up the coroutine that handles thinking.
+    //whenever an enemy is enabled in unity, it refreshes it's health to full,
+    // and starts up the coroutine that handles thinking.
     public void OnEnable()
     {
         EnCurrentHp.value = bipedMaxHp.value;
         EnableEvent.Invoke();
     }
 
-    //fun trick I learned. this generates spheres in editor, so you can see the enemy's sight and attack ranges as you modify them.
+    //fun trick I learned. this generates spheres in editor,
+    // so you can see the enemy's sight and attack ranges as you modify them.
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
