@@ -5,9 +5,15 @@ public class SceneChangeBehavior : MonoBehaviour
 {
     //public IntData sceneNum;
 
-    public void ChangeScene(string sceneName)
+    public void ChangeScene(string sceneName)//use when changing scenes
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void tempLeaveOverworld(string sceneName)//use when changing scenes for combat
+    {
+        GameObject.Find("base room").BroadcastMessage("leaveRoom");
+        ChangeScene(sceneName);
     }
     //this is all the old code from JM keeping it here for ref, probs need to scrap it at some point
     

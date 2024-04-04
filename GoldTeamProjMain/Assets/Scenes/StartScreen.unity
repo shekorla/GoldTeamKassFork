@@ -904,6 +904,66 @@ MonoBehaviour:
           m_StringArgument: Town
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 5c94bf7fd61d49f4ebdfe3125c07ddc9, type: 2}
+        m_TargetAssemblyTypeName: playerInvent, Assembly-CSharp
+        m_MethodName: FullReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: ac6b2ba41dc00f14986c5851076eb006, type: 2}
+        m_TargetAssemblyTypeName: RoomData, Assembly-CSharp
+        m_MethodName: resetData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f93514d0b5782e04684b7f3ad2f76184, type: 2}
+          m_ObjectArgumentAssemblyTypeName: RoomData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 93ed2d5a028a79d4c88a7f02fa5519c8, type: 2}
+        m_TargetAssemblyTypeName: RoomData, Assembly-CSharp
+        m_MethodName: resetData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 500ce480f4ea5b845b8f57c72cd5d5d8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: RoomData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7ef27fb64c9e52e4daade21492cea598, type: 2}
+        m_TargetAssemblyTypeName: RoomData, Assembly-CSharp
+        m_MethodName: resetData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8c10fac75e1b2a34b84f86a5f3123914, type: 2}
+          m_ObjectArgumentAssemblyTypeName: RoomData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 92fc8bab95231634ca11c65f564a5d60, type: 2}
+        m_TargetAssemblyTypeName: RoomData, Assembly-CSharp
+        m_MethodName: resetData
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f32c340ec57251342ad93ddebf03b351, type: 2}
+          m_ObjectArgumentAssemblyTypeName: RoomData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1305422149
 MonoBehaviour:
   m_ObjectHideFlags: 0

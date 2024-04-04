@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 675784230}
   - component: {fileID: 675784229}
   - component: {fileID: 675784228}
-  - component: {fileID: 824232658}
+  - component: {fileID: 4952446480062214891}
   m_Layer: 5
   m_Name: EnHealthCanvas
   m_TagString: Untagged
@@ -102,25 +102,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1183024399 &824232658
-LookAtConstraint:
+--- !u!114 &4952446480062214891
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675784226}
   m_Enabled: 1
-  m_Weight: 1
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_Roll: 0
-  m_WorldUpObject: {fileID: 0}
-  m_UseUpObject: 0
-  m_IsContraintActive: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fe96196401e9344b789821f342d65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusCam: {fileID: 0}
 --- !u!1 &2060664220
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class playerInvent : ScriptableObject
       try //this stop doubles
       {
          checkpoints.Add("town",true);
-         checkpoints.Add("plains",false);
+         checkpoints.Add("plains",true);
          checkpoints.Add("forest",false);
          checkpoints.Add("junk",false);
          checkpoints.Add("cave",false);

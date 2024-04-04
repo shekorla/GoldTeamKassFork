@@ -13,6 +13,10 @@ public class uiMapBeh : MonoBehaviour
             {
                 item.SetActive(true);
             }
+            else
+            {
+                item.SetActive(false);
+            }
         }
     }
 }

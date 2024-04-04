@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8cf72e3b6780c04eb80db781ab9a438, type: 3}
-  m_Name: east caves
+  m_Name: RAMwestJunkyard
   m_EditorClassIdentifier: 
-  roomName: caves
-  nWall: {fileID: 7051668200836092018, guid: 0508e85636de79c429bbfacbc09966dd, type: 3}
-  sWall: {fileID: 7051668200836092018, guid: 0508e85636de79c429bbfacbc09966dd, type: 3}
-  eWall: {fileID: 7051668200836092018, guid: 0508e85636de79c429bbfacbc09966dd, type: 3}
-  wWall: {fileID: 4006874568943675925, guid: 492029ccb43f4ba4f9fa3604427c2de5, type: 3}
+  roomName: junkyard
+  nWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
+  sWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
+  eWall: {fileID: 2796314097774538956, guid: c07135183f49e8246b2f82143b851c61, type: 3}
+  wWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
   floor: {fileID: 6098700508541646970, guid: 8efc67a450c2ffe47af5873f386fd93b, type: 3}
-  spawnPoint: {x: -230, y: 0, z: -85}
+  spawnPoint: {x: 235, y: 0, z: -85}
   contentObjs: []
   locations: []

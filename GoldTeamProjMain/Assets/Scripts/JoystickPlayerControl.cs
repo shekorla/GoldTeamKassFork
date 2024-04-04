@@ -48,7 +48,7 @@ public class JoystickPlayerControl : MonoBehaviour
             
         }
         
-        }
+    }
 
     public void CallToggleMovementOn()
     {

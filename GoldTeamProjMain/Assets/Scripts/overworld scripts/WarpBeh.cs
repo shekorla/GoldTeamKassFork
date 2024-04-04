@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,16 +8,19 @@ public class WarpBeh : MonoBehaviour
     public bool active;
     public string myReigon;
     public playerInvent plrinvt;
+    public uiMenuBeh menu;
 
     public void Start()
     {
+        menu = GameObject.Find("JoyCanvas").GetComponent<uiMenuBeh>();
         if (plrinvt.validTravelCheck(myReigon))//if this point is unlocked
         {
             active = true;//make sure that this code works
             activeEv.Invoke();//connect the animations
         }
     }
-    private void OnCollisionEnter(Collision other)
+    
+    public void OnTriggerEnter(Collider other)
     {
         if (active==false)
         {
@@ -30,7 +34,7 @@ public class WarpBeh : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                mapEv.Invoke(); //this opens the ui for traveling via map
+                menu.BroadcastMessage("changeState","teleport"); //this opens the ui for traveling via map
             }
         }
     }

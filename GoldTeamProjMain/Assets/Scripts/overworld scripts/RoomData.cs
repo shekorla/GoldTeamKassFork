@@ -3,7 +3,6 @@ using UnityEngine;
 public class RoomData : ScriptableObject
 {
     [Header("Holds data to quickly set up rooms")] //header adds a line of text in the editor
-    public string roomName;
     public GameObject nWall, sWall, eWall, wWall,floor;
 
     [Header("where should the player spawn")]
@@ -15,4 +14,11 @@ public class RoomData : ScriptableObject
     public GameObject[] contentObjs;
     [Header("Y val at 0. both x and z vals between -240 & 240")]
     public Vector3[] locations;
+
+    public void resetData(RoomData basic)
+    {
+        spawnPoint = basic.spawnPoint;
+        contentObjs = basic.contentObjs;
+        locations = basic.locations;
+    }
 }

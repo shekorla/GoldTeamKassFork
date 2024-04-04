@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     public GameObject valImg;
-
+    public IntData maxHp;
+    
     private RectTransform rectangle, hpRect;//rectangle is the full healthbar, hp rect is the green portion
     private Vector2 size;
     private void Awake()//awake happens before start
@@ -31,15 +33,18 @@ public class HealthBar : MonoBehaviour
 
     public void updateVal(int currentVal)//updates the healthy image
     {
-        size = hpRect.sizeDelta;
-        size.x=(currentVal);
-        hpRect.sizeDelta = size;
+        valImg.GetComponent<Image>().fillAmount=(currentVal/maxHp.value);
+        //this is old code, delete later
+        // size = hpRect.sizeDelta;
+        // size.x=(currentVal);
+        // hpRect.sizeDelta = size;
     }
     public void updateValueToIntData(IntData obj)//variant that updates the healthy image to a given Intdata's value
     {
-        size = hpRect.sizeDelta;
-        size.x=(obj.value);
-        hpRect.sizeDelta = size;
+        valImg.GetComponent<Image>().fillAmount=(obj.value/maxHp.value);
+        //size = hpRect.sizeDelta;
+        //size.x=(obj.value);
+        //hpRect.sizeDelta = size;
     }  
     
     
