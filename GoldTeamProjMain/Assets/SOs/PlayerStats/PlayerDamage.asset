@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ed5ebc68fb0e24c88d9dbd13090501, type: 3}
   m_Name: PlayerDamage
   m_EditorClassIdentifier: 
-  value: 10
+  value: 15
   onMinEvent:
     m_PersistentCalls:
       m_Calls: []
