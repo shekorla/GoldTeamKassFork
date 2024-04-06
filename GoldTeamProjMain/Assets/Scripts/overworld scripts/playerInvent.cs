@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class playerInvent : ScriptableObject
 {
-   public int fuel, scrap, wood, timer;
+   public int fuel, scrap, wood;
+   public float timer=100;
    public Dictionary<string, bool> checkpoints=new Dictionary<string, bool>();//keep the unessesary new section, else it breaks things
 
    public void Awake()

@@ -20,7 +20,7 @@ public class KnockBackBehavior : MonoBehaviour
     public void KnockBack()
     {
         i = TargetSpeed.value;
-        print("Knockback activated Value number"+ Launchspeeds.floatList[i]);
+        //print("Knockback activated Value number"+ Launchspeeds.floatList[i]);
         rb.AddForce(transform.forward * Launchspeeds.floatList[i]);
     }
 }
