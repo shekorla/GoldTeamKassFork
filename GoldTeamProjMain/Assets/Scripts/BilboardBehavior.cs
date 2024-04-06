@@ -16,6 +16,7 @@ public class BilboardBehavior : MonoBehaviour
 
     public void Billboard()
     {
+        
         transform.LookAt(focusCam.transform.position, -Vector3.up);
         
     }
