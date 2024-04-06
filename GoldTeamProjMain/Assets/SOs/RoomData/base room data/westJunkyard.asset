@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cf72e3b6780c04eb80db781ab9a438, type: 3}
+  m_Name: westJunkyard
+  m_EditorClassIdentifier: 
+  roomName: junkyard
+  nWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
+  sWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
+  eWall: {fileID: 2796314097774538956, guid: c07135183f49e8246b2f82143b851c61, type: 3}
+  wWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
+  floor: {fileID: 6098700508541646970, guid: 8efc67a450c2ffe47af5873f386fd93b, type: 3}
+  spawnPoint: {x: 235, y: 0, z: -85}
+  contentObjs:
+  - {fileID: 6692644350267616039, guid: b20503352b2491a44b74ffec19bc486a, type: 3}
+  locations:
+  - {x: 0, y: 10, z: 0}
