@@ -780,6 +780,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &3930970163698303770
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: F_Player_Heal
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d0fae8b9614d0f44abac4674dfd8dc02, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &6936839039069950353
 AnimatorState:
   serializedVersion: 6
@@ -913,13 +939,16 @@ AnimatorStateMachine:
     m_Position: {x: 10, y: 490, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4339260998088875104}
-    m_Position: {x: 330, y: 640, z: 0}
+    m_Position: {x: 550, y: 710, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3430172677306411417}
     m_Position: {x: 480, y: 480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6936839039069950353}
     m_Position: {x: 150, y: 860, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 3930970163698303770}
+    m_Position: {x: 400, y: 850, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

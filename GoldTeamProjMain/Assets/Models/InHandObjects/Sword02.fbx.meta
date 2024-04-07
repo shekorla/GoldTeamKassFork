@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 5aadf36599992804d92efc15c5965c36
+guid: 3a6c4dc48ca0ccc4b8fd994e7db184d1
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      74: 1827226128182048838
-    second: Take 001
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -14,7 +11,7 @@ ModelImporter:
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 1
+    bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1

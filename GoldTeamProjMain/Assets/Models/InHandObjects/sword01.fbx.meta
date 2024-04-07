@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 5aadf36599992804d92efc15c5965c36
+guid: a8ad884dba2c74c45bd93ef20d060cd6
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      74: 1827226128182048838
-    second: Take 001
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -14,7 +11,7 @@ ModelImporter:
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
-    bakeSimulation: 1
+    bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
@@ -69,7 +66,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
