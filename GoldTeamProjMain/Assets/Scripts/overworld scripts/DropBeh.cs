@@ -15,7 +15,7 @@ public class DropBeh : MonoBehaviour
         if (other.CompareTag("Player"))//dont execute for everything
         {
             //id like to add code here later to allow it to float towards the player
-            bag.addThings(value,type);
+            bag.addThings(type,value);
             Destroy(parent);
         }
     }

@@ -19,5 +19,7 @@ MonoBehaviour:
   wWall: {fileID: 5385077976287129491, guid: 12c5909939ecbad4984ffc6e9d64f24e, type: 3}
   floor: {fileID: 6098700508541646970, guid: 8efc67a450c2ffe47af5873f386fd93b, type: 3}
   spawnPoint: {x: 235, y: 0, z: -85}
-  contentObjs: []
-  locations: []
+  contentObjs:
+  - {fileID: 6692644350267616039, guid: b20503352b2491a44b74ffec19bc486a, type: 3}
+  locations:
+  - {x: 0, y: 10, z: 0}
