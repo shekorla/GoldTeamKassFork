@@ -206,6 +206,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3991426220275648321, guid: a1f57ecf83341644e92c02b00e62ff74, type: 3}
   m_PrefabInstance: {fileID: 1444428}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &100363160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7445580068899091869, guid: c09c09c0740751a469ceb416ee16ee53, type: 3}
+  m_PrefabInstance: {fileID: 123083888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &123083888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,24 +390,6 @@ MonoBehaviour:
   - {fileID: 1612705172}
   - {fileID: 523567114}
   - {fileID: 1600005257}
---- !u!1 &183929170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3901938110042914703, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
-  m_PrefabInstance: {fileID: 1464257041}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &183929174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183929170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4c1ee52f26819a4086e4346a1789095, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 2
 --- !u!1 &229862736
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8515f505c4bb27f4385879948da0a973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  villager: {fileID: 0}
+  villager: {fileID: 100363160}
 --- !u!114 &476482283
 MonoBehaviour:
   m_ObjectHideFlags: 0
