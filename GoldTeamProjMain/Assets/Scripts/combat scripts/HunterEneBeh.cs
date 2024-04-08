@@ -12,6 +12,8 @@ public class HunterEneBeh : MonoBehaviour
     
     [Tooltip("about 3-5 less than the hunt range collider radius")]
     public float   sightRange;
+
+    public GameObject parent;
     
     private Transform playerPos;
     private NavMeshAgent agent;
@@ -36,13 +38,14 @@ public class HunterEneBeh : MonoBehaviour
         }
     }
 
-    public void stopAll()//call this on death to help clean up
+    public void death()//call this on death to help clean up
     {
         StopAllCoroutines();
         if (agent!=null)
         {
             agent.isStopped = true;
         }
+        GameObject.Find("base room").BroadcastMessage("removeMe",parent);
     }
 
     public void attack()

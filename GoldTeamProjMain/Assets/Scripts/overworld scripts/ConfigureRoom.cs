@@ -1,22 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class ConfigureRoom : MonoBehaviour
 {
     public GameObject nWall, sWall, eWall, wWall, floor,plr;
     public UnityEvent swapEv;
-    [FormerlySerializedAs("newRoom")] public RoomData readRoomData;
+    public RoomData readRoomData,WriteRoomData;
 
     private int loopingNum;
     public List<GameObject> currentMisc;
 
-    public void Start()
+    public void Start()//this gets called everytime the scene loads
     {
-        readRoomData.spawnPoint = new Vector3(0, 0, -230);// start just outside of city
-        swapEv.Invoke();
-        setup();
+        swap(WriteRoomData);
     }
 
     public void swap(RoomData newby)
@@ -61,10 +58,11 @@ public class ConfigureRoom : MonoBehaviour
         int looping=0;
         foreach (var item in currentMisc)
         {
-            readRoomData.contentObjs[looping]=item;
-            readRoomData.locations[looping] = item.transform.position;
+            WriteRoomData.contentObjs[looping]=item;
+            WriteRoomData.locations[looping] = item.transform.position;
             looping++;
         }
+        WriteRoomData.spawnPoint = plr.transform.position;
     }
 
     public void removeMe(GameObject dead)//when you break a thing remove it from room memory
@@ -74,6 +72,7 @@ public class ConfigureRoom : MonoBehaviour
             if (item==dead)
             {
                 currentMisc.Remove(item);
+                Destroy(dead);
             }
         }
     }

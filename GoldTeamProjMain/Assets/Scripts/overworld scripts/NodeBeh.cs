@@ -27,7 +27,6 @@ public class NodeBeh : MonoBehaviour
             bouncy.velocity = new Vector3(Random.Range(-20,20), 0, Random.Range(-20,20));//launch at rand angle, rigidbody will then fall with gravity
             i++;
         }
-        GameObject.Find("base room").BroadcastMessage("removeMe",parent);
-        Destroy(parent);//setting it to a reference of itself vs just doing gameObject helps it not destroy all the clones
+        GameObject.Find("base room").BroadcastMessage("removeMe",parent); //setting it to a reference of itself vs just doing gameObject helps it not destroy all the clones
     }
 }

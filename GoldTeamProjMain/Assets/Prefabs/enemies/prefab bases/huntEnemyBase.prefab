@@ -238,6 +238,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   sightRange: 45
+  parent: {fileID: 3054770018492407416}
 --- !u!1 &3054770020016695321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,6 +5315,18 @@ MonoBehaviour:
           m_StringArgument: CombatScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3054770018492407418}
+        m_TargetAssemblyTypeName: HunterEneBeh, Assembly-CSharp
+        m_MethodName: death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   weaponEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -10167,7 +10180,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4497426260875406012, guid: 3945004b43fb8b14895a4eb46448ecc3, type: 3}
       propertyPath: m_Name
-      value: stick
+      value: machete
       objectReference: {fileID: 0}
     - target: {fileID: 4497426260875406013, guid: 3945004b43fb8b14895a4eb46448ecc3, type: 3}
       propertyPath: m_RootOrder
