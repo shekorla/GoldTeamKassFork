@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 097782735540f2d4db5606eae04ae6a7, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1323721704764067638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3115,6 +3115,7 @@ GameObject:
   - component: {fileID: 9188543822836454533}
   - component: {fileID: 442780844328649560}
   - component: {fileID: 2758495342346317398}
+  - component: {fileID: 5217617939243402131}
   m_Layer: 5
   m_Name: loading
   m_TagString: Untagged
@@ -3928,7 +3929,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4750079388070990275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
