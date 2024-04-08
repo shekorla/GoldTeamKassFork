@@ -42,6 +42,7 @@ public class HealthBar : MonoBehaviour
         //ints can only be whole numbers, our hp bar relies on decimals
         float hpAmt = obj.value;
         float maxAmt = maxHp.value;
+        
         valImg.GetComponent<Image>().fillAmount=hpAmt/maxAmt;
     }  
     
