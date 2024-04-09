@@ -15,6 +15,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: trapped plat
       objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8138197188691546356}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: F_Player_Win
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8893883441844529260, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -123,3 +155,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc9fd8125d581d74ba5fa6d16daf5e3a, type: 3}
+--- !u!95 &8138197188691546356 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 981255196527507684, guid: dc9fd8125d581d74ba5fa6d16daf5e3a, type: 3}
+  m_PrefabInstance: {fileID: 9038356525353920528}
+  m_PrefabAsset: {fileID: 0}

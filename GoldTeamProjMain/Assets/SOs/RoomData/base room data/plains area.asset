@@ -19,41 +19,41 @@ MonoBehaviour:
   floor: {fileID: 8329882326169817342, guid: 5391cdfa16f3f2c4081b64564a31cfc1, type: 3}
   spawnPoint: {x: 0, y: 0, z: -230}
   contentObjs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 6692644350267616039, guid: b20503352b2491a44b74ffec19bc486a, type: 3}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 3054770018492407416, guid: dbd24604101ea5f449c8fe090405f57b, type: 3}
+  - {fileID: 7146685942643230748, guid: ae55b3aa49c76844bbbd5567a44c1157, type: 3}
+  - {fileID: 8202190925014102643, guid: f163236134019f54ab6233c66a35b658, type: 3}
+  - {fileID: 8438631605783493845, guid: 7f2f0b4be06c868489e567431560db78, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
+  - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   - {fileID: 2230953870841095442, guid: 476bd0652be3c6b4d841dcd283a1c980, type: 3}
   locations:
-  - {x: 36.31924, y: 0.08333334, z: 44.488335}
+  - {x: 36.31924, y: 0, z: 44.488335}
   - {x: 0, y: 10, z: 0}
-  - {x: -150, y: 0.08333334, z: -200}
-  - {x: 225, y: 0.08333334, z: -225}
-  - {x: -175, y: 0.08333334, z: 175}
-  - {x: 100, y: 0.08333334, z: 200}
-  - {x: 210, y: 0.08333334, z: -75}
+  - {x: -150, y: 0, z: -200}
+  - {x: 225, y: 0, z: -225}
+  - {x: -175, y: 0, z: 175}
+  - {x: 100, y: 0, z: 200}
+  - {x: 210, y: 0, z: -75}
   - {x: -200, y: 0, z: -100}
   - {x: -75, y: 0, z: 50}
   - {x: 175, y: 0, z: 175}
-  - {x: -50, y: 0, z: 75}
+  - {x: -50, y: 0, z: 175}
   - {x: 125, y: 0, z: 125}
   - {x: 175, y: 0, z: 59}
   - {x: -200, y: 0, z: -25}

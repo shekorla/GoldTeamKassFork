@@ -8,12 +8,76 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5732005040181301585}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
       propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: angler
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: F_PlayerWin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883440805668963, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: playerEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8893883441844529256, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
       propertyPath: m_Name
       value: trapped angler
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 5732005040181301585}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: F_Player_Win
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893883441844529258, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
+      propertyPath: weaponEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8893883441844529260, guid: aa0754df3b94ca043b2e097e9c7e6201, type: 3}
       propertyPath: m_RootOrder
@@ -85,6 +149,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.4937202
       objectReference: {fileID: 0}
+    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 1851766225313232166, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1671788e-15
@@ -143,3 +211,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+--- !u!95 &5732005040181301585 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8629871652933962969, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+  m_PrefabInstance: {fileID: 4057561559035469192}
+  m_PrefabAsset: {fileID: 0}

@@ -263,33 +263,8 @@ MonoBehaviour:
   plr: {fileID: 1540976284}
   swapEv:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1611193320}
-        m_TargetAssemblyTypeName: uiMenuBeh, Assembly-CSharp
-        m_MethodName: changeState
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: load
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: uiMenuBeh, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  readRoomData: {fileID: 11400000, guid: 8c10fac75e1b2a34b84f86a5f3123914, type: 2}
-  WriteRoomData: {fileID: 11400000, guid: 7ef27fb64c9e52e4daade21492cea598, type: 2}
+      m_Calls: []
+  readRoomData: {fileID: 11400000, guid: e3ca856278417244181a02ba63eb86fb, type: 2}
   currentMisc:
   - {fileID: 426676795}
   - {fileID: 501894177}
@@ -764,10 +739,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: IncrementAnim
       objectReference: {fileID: 0}
-    - target: {fileID: 1900482443, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1900482444, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1108,17 +1079,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6062513733296861338, guid: ce75732a8b8b02842aa09d37f6c51d02, type: 3}
   m_PrefabInstance: {fileID: 1580331924}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1611193320 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2893195966408028215, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
-  m_PrefabInstance: {fileID: 1464257041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d5fb225a53226e4e8b62d82ca699958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1612547921
 PrefabInstance:
   m_ObjectHideFlags: 0

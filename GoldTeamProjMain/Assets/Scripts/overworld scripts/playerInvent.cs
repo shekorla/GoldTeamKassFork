@@ -76,7 +76,7 @@ public class playerInvent : ScriptableObject
          checkpoints["forest"] = false;
          checkpoints["junk"] = false;
          checkpoints["cave"] = false;
-         
+         villagers.Clear();
       }
 
    //reports the chosen value as a string, for display
@@ -104,7 +104,7 @@ public class playerInvent : ScriptableObject
    //when you save someone add them to the saved list
    public void savedVillager(string name)
    {
-      if (!villagers.Contains(name))
+      if (!villagers.Contains(name))//if they are not already in the list
       {
          villagers.Add(name);
       }
