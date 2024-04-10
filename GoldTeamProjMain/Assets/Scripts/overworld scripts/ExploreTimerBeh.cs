@@ -29,13 +29,13 @@ public class ExploreTimerBeh : MonoBehaviour
 
     IEnumerator Countdown()
     {
-        while (invent.timer>0)
+        while (invent.timer>=0)
         {
             invent.timer -= 1;
             display.updateVal(invent.timer);
-            yield return delay;
+            yield return delay=new WaitForSeconds(1);
         }
-        while (plrHealth.value>0)
+        while (plrHealth.value<=0)
         {
             timesUp.Invoke(); 
         }

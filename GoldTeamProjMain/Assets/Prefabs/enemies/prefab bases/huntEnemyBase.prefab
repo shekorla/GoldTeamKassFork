@@ -154,7 +154,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -238,6 +238,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   sightRange: 45
+  parent: {fileID: 3054770018492407416}
 --- !u!1 &3054770020016695321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,9 +5163,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3568510124617240909}
   m_LocalRotation: {x: -0.0020170936, y: -0, z: 0, w: 0.999998}
-  m_LocalPosition: {x: 0, y: 4.95, z: -0.010269165}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 4.67, z: 0.09}
+  m_LocalScale: {x: 1.34, y: 1.34, z: 1.34}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 231356259718963778}
   - {fileID: 9191859564422522910}
@@ -5230,10 +5231,10 @@ ParentConstraint:
   m_GameObject: {fileID: 3568510124617240909}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 4.95, z: -0.010269165}
+  m_TranslationAtRest: {x: 0, y: 4.67, z: 0.09}
   m_RotationAtRest: {x: -0.23114192, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: -0.35504723, z: -0.001438966}
+  - {x: 0, y: -0.63544893, z: 0.09769984}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
@@ -5302,6 +5303,18 @@ MonoBehaviour:
   playerEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 3054770018492407418}
+        m_TargetAssemblyTypeName: HunterEneBeh, Assembly-CSharp
+        m_MethodName: death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1937604579753554841}
         m_TargetAssemblyTypeName: SceneChangeBehavior, Assembly-CSharp
         m_MethodName: tempLeaveOverworld
@@ -10167,7 +10180,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4497426260875406012, guid: 3945004b43fb8b14895a4eb46448ecc3, type: 3}
       propertyPath: m_Name
-      value: stick
+      value: machete
       objectReference: {fileID: 0}
     - target: {fileID: 4497426260875406013, guid: 3945004b43fb8b14895a4eb46448ecc3, type: 3}
       propertyPath: m_RootOrder
@@ -10271,6 +10284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 290157102733765172, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a4e930ea2470c864bbcb3e6b1c3ce95b, type: 2}
     - target: {fileID: 919132149155446097, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
       propertyPath: m_Name
       value: MainBipedBody

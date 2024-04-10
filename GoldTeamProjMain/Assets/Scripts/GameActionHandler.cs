@@ -12,6 +12,7 @@ public class GameActionHandler : MonoBehaviour
 
     private void Raise()
     {
+        //print(gameActionObj.name + " raised on " + gameObject.name);
         onRaiseEvent.Invoke();
     }
 }

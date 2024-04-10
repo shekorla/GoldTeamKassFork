@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerLaunchSpeeds
   m_EditorClassIdentifier: 
   floatList:
-  - -300
-  - -2400
+  - -400
+  - -2800
