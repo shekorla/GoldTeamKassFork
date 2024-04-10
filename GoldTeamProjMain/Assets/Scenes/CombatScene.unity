@@ -1050,10 +1050,6 @@ PrefabInstance:
       propertyPath: focusCam
       value: 
       objectReference: {fileID: 531695539}
-    - target: {fileID: 4275639127638590634, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a4e930ea2470c864bbcb3e6b1c3ce95b, type: 2}
     - target: {fileID: 8916703189530511502, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
       propertyPath: m_Name
       value: EnemyBiped
