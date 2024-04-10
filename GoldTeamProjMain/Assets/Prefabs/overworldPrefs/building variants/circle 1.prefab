@@ -68,6 +68,10 @@ PrefabInstance:
       value: circle 1
       objectReference: {fileID: 0}
     - target: {fileID: 3623889568799872109, guid: 334d7fb1552ae5e419b3261302e5fdf0, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623889568799872109, guid: 334d7fb1552ae5e419b3261302e5fdf0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 268d419c9ff1a8845974ab5343efe360, type: 2}
