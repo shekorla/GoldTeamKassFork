@@ -137,30 +137,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7146685943752902676}
     m_Modifications:
-    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.04499818
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.112126
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.4937202
-      objectReference: {fileID: 0}
-    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851766225313232166, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.1671788e-15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1851766225313232166, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.024399161
-      objectReference: {fileID: 0}
     - target: {fileID: 4558498442483467913, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
       propertyPath: m_Name
       value: vill_angler
