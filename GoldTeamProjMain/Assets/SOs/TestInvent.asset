@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuel: 4
   scrap: 0
-  wood: 0
-  timer: 100
+  wood: 55
+  timer: 104
+  villagers: []

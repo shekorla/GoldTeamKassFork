@@ -9,7 +9,7 @@ public class TriggerBehavior : MonoBehaviour
     {
         triggerStartEvent.Invoke();
         //i hope you dont mind me adding these it just checks what it is being hit by
-        print("collision: "+other.tag );
+        //print("collision: "+other.tag );
         if (other.CompareTag("Player"))
         {
             playerEvent.Invoke();

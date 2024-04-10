@@ -1,22 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 public class ConfigureRoom : MonoBehaviour
 {
     public GameObject nWall, sWall, eWall, wWall, floor,plr;
     public UnityEvent swapEv;
-    [FormerlySerializedAs("newRoom")] public RoomData readRoomData;
+    public RoomData readRoomData;//use the RAM version of the room data code
 
     private int loopingNum;
     public List<GameObject> currentMisc;
 
-    public void Start()
+    public void Start()//this gets called everytime the scene loads
     {
-        readRoomData.spawnPoint = new Vector3(0, 0, -230);// start just outside of city
-        swapEv.Invoke();
-        setup();
+        swap(readRoomData);
     }
 
     public void swap(RoomData newby)
@@ -27,11 +24,13 @@ public class ConfigureRoom : MonoBehaviour
     }
     public void SetWall(GameObject prefabb,GameObject Parentt)//creates an instance of the wall prefab as a child
     {//its easier to swap game objs than to change tex so the floor gets changed using this method too
+        GameObject newwall;
         if (Parentt.transform.childCount!=0)
         {
             Destroy(Parentt.transform.GetChild(0).gameObject);//clears out old wall
         }
-        Instantiate(prefabb,Parentt.transform);//new wall as child
+        newwall= Instantiate(prefabb,Parentt.transform);//new wall as child
+        currentMisc.Add(newwall);
     }
     
     public void setup()//we can create room datas to quickly build new areas
@@ -42,11 +41,6 @@ public class ConfigureRoom : MonoBehaviour
             Destroy(thingy.gameObject);
         }
         currentMisc.Clear();//idk if this is needed but it makes me feel better
-        SetWall(readRoomData.nWall,nWall);
-        SetWall(readRoomData.eWall,eWall);
-        SetWall(readRoomData.sWall,sWall);
-        SetWall(readRoomData.wWall,wWall);
-        SetWall(readRoomData.floor,floor);
         loopingNum = 0;
         foreach (var item in readRoomData.contentObjs)
         {
@@ -54,28 +48,27 @@ public class ConfigureRoom : MonoBehaviour
             currentMisc.Add(Instantiate(readRoomData.contentObjs[loopingNum],readRoomData.locations[loopingNum],new Quaternion(0,0,0,0)));
             loopingNum++;//kassidy stop being an idiot and trying to take this out, it wont work
         }
+        SetWall(readRoomData.nWall,nWall);
+        SetWall(readRoomData.eWall,eWall);
+        SetWall(readRoomData.sWall,sWall);
+        SetWall(readRoomData.wWall,wWall);
+        SetWall(readRoomData.floor,floor);
     }
 
-    public void leaveRoom() //take a picture of everything currently left in room
+    public void leaveRoom() //had more code here, it broke, just check where player is
     {
-        int looping=0;
-        foreach (var item in currentMisc)
-        {
-            readRoomData.contentObjs[looping]=item;
-            readRoomData.locations[looping] = item.transform.position;
-            looping++;
-        }
+        readRoomData.spawnPoint = plr.transform.position;
     }
 
     public void removeMe(GameObject dead)//when you break a thing remove it from room memory
     {
-        foreach (var item in currentMisc)
-        {
-            if (item==dead)
-            {
-                currentMisc.Remove(item);
-            }
-        }
+        int temp;
+        temp = currentMisc.IndexOf(dead);
+        readRoomData.contentObjs.RemoveAt(temp);
+        readRoomData.locations.RemoveAt(temp);
+        currentMisc.Remove(dead); 
+        Destroy(dead);
+        
     }
 
     
