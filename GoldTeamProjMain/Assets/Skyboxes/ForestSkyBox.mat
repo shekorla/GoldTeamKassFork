@@ -90,7 +90,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
-        m_Texture: {fileID: 2800000, guid: b0aaa483c3a45cd429471eba2d2348fd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 92dede48f75185d4c8997514b8058bf4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
