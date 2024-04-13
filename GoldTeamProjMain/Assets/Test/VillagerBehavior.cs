@@ -127,6 +127,9 @@ public class VillagerBehavior : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(transform.position, new Vector3(villagerSettings.walkAreaSize * 2f, 0.1f, villagerSettings.walkAreaSize * 2f));
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(transform.position, randomDestination);
+        Gizmos.DrawWireCube(randomDestination, new Vector3(3,3,3));
     }
     public void SetAgent(NavMeshAgent agent)
     {
