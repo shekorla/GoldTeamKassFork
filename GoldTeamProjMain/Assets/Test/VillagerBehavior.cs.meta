@@ -3,7 +3,11 @@ guid: f480a4d010153c44fad91012bb01f870
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - villagerSettings: {fileID: 11400000, guid: 22f553f7f8d8b5144a2ce5de8c744665, type: 2}
+  - playerTransform: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - dialogue: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
