@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class VillagerBehavior : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class VillagerBehavior : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     private float destinationTimer; // Timer for reaching the destination
     private float destinationTimeout = 10f; // Time allowed to reach the destination
+    public UnityEvent walkingAnimation, stopWalkingAnimation;
     
 
     void Start()
@@ -51,9 +53,9 @@ public class VillagerBehavior : MonoBehaviour
             }
 
             // Set the IsWalking parameter to false
-            animator.Play("Skull_Walk_Anim");
-
-            print("Stopping");
+            
+            stopWalkingAnimation.Invoke(); 
+            //print("Stopping");
         }
         else
         {
@@ -66,9 +68,9 @@ public class VillagerBehavior : MonoBehaviour
             else
             {
                 // Set the IsWalking parameter to true
-                animator.Play("Skull_Stun_Anim");
+            walkingAnimation.Invoke();
 
-            print("Walking");
+            //print("Walking");
             }
         }
     }
