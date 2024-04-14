@@ -16,6 +16,6 @@ MonoBehaviour:
   walkAreaSize: 100
   minPauseDuration: 1
   maxPauseDuration: 1
-  walkSpeed: 20
+  walkSpeed: 8
   idleAnimation: {fileID: 7400000, guid: 8aef4f9e8fbc26549a5be8e86d82a605, type: 2}
   walkAnimation: {fileID: 7400000, guid: 3e367e84c8c6da2478703d048fd4cb8f, type: 2}
