@@ -80,6 +80,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Grass_Rocks
+    second: {fileID: 2100000, guid: feaed3430269f7344b318597a07cfcbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Gravel
     second: {fileID: 2100000, guid: 941b1d35915e1f2489d95baa62820d2b, type: 2}
   - first:
@@ -160,6 +165,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Tree_Willow
+    second: {fileID: 2100000, guid: ff61f1953e316e1429a1c7e1fff77600, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Water_Pond
     second: {fileID: 2100000, guid: 8bd215ef4f06f14428095f4e97050069, type: 2}
   - first:
@@ -177,6 +187,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Wood Window 3
     second: {fileID: 2100000, guid: 2411b72f8a4c8de4caf5b0df1632a375, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Path
+    second: {fileID: 2100000, guid: cfce2e782af025f49b0133d1e8fe4b18, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

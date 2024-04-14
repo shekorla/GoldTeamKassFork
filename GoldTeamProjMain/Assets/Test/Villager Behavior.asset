@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Villager Behavior
   m_EditorClassIdentifier: 
   villagerPrefab: {fileID: 1437691418910702630, guid: a6c35f64047bcde41a4f3539be04c52c, type: 3}
-  walkAreaSize: 100
+  walkAreaSize: 20
   minPauseDuration: 1
-  maxPauseDuration: 1
-  walkSpeed: 20
+  maxPauseDuration: 10
+  walkSpeed: 10
   idleAnimation: {fileID: 7400000, guid: 8aef4f9e8fbc26549a5be8e86d82a605, type: 2}
-  walkAnimation: {fileID: 7400000, guid: 3e367e84c8c6da2478703d048fd4cb8f, type: 2}
+  walkAnimation: {fileID: 7400000, guid: e73609154e3cb714ba33a0dac479d09b, type: 2}

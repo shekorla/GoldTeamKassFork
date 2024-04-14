@@ -5,26 +5,29 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/TitleScene.unity
-    guid: e58b07cb40a39a648982226235423ccc
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/CombatScene.unity
     guid: ff2950994578bbc4b924e1498cfb38ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartScreen.unity
     guid: b78c81356eb07d0459daf1d263bc4461
-  - enabled: 1
-    path: Assets/Scenes/Town.unity
-    guid: 9a781b836e22d6c48a4264411f875d4a
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/overworld.unity
     guid: 5a6cf8fbc7c60be498015dcf0dcaf5ad
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Town.unity
-    guid: 9a781b836e22d6c48a4264411f875d4a
-  - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
-    guid: 401bc17cee4101344a71e51ce01fa1b7
+    guid: 4b30fe4aeccafc445a879638f35ce8d6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 43b1c7b562e831b4a8dcc973ab101b4c, type: 2}
