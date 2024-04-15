@@ -25,6 +25,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Cliff
+    second: {fileID: 2100000, guid: 2409ef42f9362a145b9c6f6c9ce0e47e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete
+    second: {fileID: 2100000, guid: 1c098da7ecb457c4c96d930ddce8901c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: DirtPath_Main
     second: {fileID: 2100000, guid: f23751d71527663448b69e8342a81760, type: 2}
   - first:
@@ -82,6 +92,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Grass_Rocks
     second: {fileID: 2100000, guid: feaed3430269f7344b318597a07cfcbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Small
+    second: {fileID: 2100000, guid: f8384774c397c024bbde4c6bd674b97b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -165,8 +180,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Tree_Branches
+    second: {fileID: 2100000, guid: dedf4880585a49c498101038fed8590e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree_Trunk
+    second: {fileID: 2100000, guid: ace3154e15f61884495946a11a71f3f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Tree_Willow
     second: {fileID: 2100000, guid: ff61f1953e316e1429a1c7e1fff77600, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tulip_Red
+    second: {fileID: 2100000, guid: 56f0af61d6b1847428ec4b970fb29bd9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

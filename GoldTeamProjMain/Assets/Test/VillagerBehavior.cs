@@ -36,7 +36,7 @@ public class VillagerBehavior : MonoBehaviour
         initialHeadRotation = myTransform.rotation;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (isPaused)
         {
