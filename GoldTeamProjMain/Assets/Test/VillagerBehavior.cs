@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class VillagerBehavior : MonoBehaviour
 {
@@ -15,23 +16,30 @@ public class VillagerBehavior : MonoBehaviour
     private float pauseTimer;
     private Rigidbody rb;
     public Dialogue dialogue; // Reference to the dialogue scriptable object
-
+    private bool hasSpawned = false;
+    private Animator animator; // Reference to the Animator component
+    private float destinationTimer; // Timer for reaching the destination
+    private float destinationTimeout = 10f; // Time allowed to reach the destination
+    public UnityEvent walkingAnimation, stopWalkingAnimation;
+    
 
     void Start()
     {
-        
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>(); // Get the Rigidbody component
+        animator = GetComponent<Animator>();
 
-        
         // Set the walk speed of the NavMeshAgent
         agent.speed = villagerSettings.walkSpeed;
 
+        
         SetRandomDestination();
     }
 
     void Update()
     {
+        // ... existing code ...
+
         if (isPaused)
         {
             // If currently paused, decrement the pause timer
@@ -43,19 +51,27 @@ public class VillagerBehavior : MonoBehaviour
                 isPaused = false;
                 SetRandomDestination();
             }
+
+            // Set the IsWalking parameter to false
+            
+            stopWalkingAnimation.Invoke(); 
+            //print("Stopping");
         }
         else
         {
-           
-            
-            
-                // If chasePlayer is disabled or playerTransform is not set, wander randomly
-                if (!agent.pathPending && agent.remainingDistance < 0.5f)
-                {
-                    isPaused = true;
-                    pauseTimer = Random.Range(villagerSettings.minPauseDuration, villagerSettings.maxPauseDuration);
-                }
-            
+            // If chasePlayer is disabled or playerTransform is not set, wander randomly
+            if (!agent.pathPending && agent.remainingDistance < 0.5f)
+            {
+                isPaused = true;
+                pauseTimer = Random.Range(villagerSettings.minPauseDuration, villagerSettings.maxPauseDuration);
+            }
+            else
+            {
+                // Set the IsWalking parameter to true
+            walkingAnimation.Invoke();
+
+            //print("Walking");
+            }
         }
     }
     void OnTriggerEnter(Collider other)
@@ -111,15 +127,14 @@ public class VillagerBehavior : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(transform.position, new Vector3(villagerSettings.walkAreaSize * 2f, 0.1f, villagerSettings.walkAreaSize * 2f));
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(transform.position, randomDestination);
+        Gizmos.DrawWireCube(randomDestination, new Vector3(3,3,3));
+        
     }
-
-    public void SpawnVillager()
+    public void SetAgent(NavMeshAgent agent)
     {
-        GameObject villager = Instantiate(villagerSettings.villagerPrefab, transform.position, Quaternion.identity);
-        VillagerBehavior villagerBehavior = villager.GetComponent<VillagerBehavior>();
-        villagerBehavior.villagerSettings = villagerSettings;
-        villagerBehavior.playerTransform = playerTransform; // Pass playerTransform reference
+        this.agent = agent;
     }
-
     
 }
