@@ -224,19 +224,7 @@ MonoBehaviour:
         m_CallState: 2
   idleEv:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7640537838344390155}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: F_Player_Idle_Anim
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   sightRange: 45
   parent: {fileID: 3054770018492407416}
 --- !u!1 &3054770020016695321
@@ -5163,7 +5151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3568510124617240909}
   m_LocalRotation: {x: -0.0020170936, y: -0, z: 0, w: 0.999998}
-  m_LocalPosition: {x: 0, y: 4.67, z: 0.09}
+  m_LocalPosition: {x: 0, y: 4.67, z: 0.089999974}
   m_LocalScale: {x: 1.34, y: 1.34, z: 1.34}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5231,10 +5219,10 @@ ParentConstraint:
   m_GameObject: {fileID: 3568510124617240909}
   m_Enabled: 1
   m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 4.67, z: 0.09}
+  m_TranslationAtRest: {x: 0, y: 4.67, z: 0.089999974}
   m_RotationAtRest: {x: -0.23114192, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: -0.63544893, z: 0.09769984}
+  - {x: 0, y: -0.63544893, z: 0.09769981}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1

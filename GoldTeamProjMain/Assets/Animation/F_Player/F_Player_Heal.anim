@@ -6788,6 +6788,22 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: Skeleton/ROOT_Jnt/Shoulders_Jnt_01/R_Arm_RK_Jnt_01/R_Arm_RK_Jnt_02/R_Arm_RK_Jnt_03/InHandItem_Jnt_01
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.6666667
+        value: {x: -1.94, y: 4.84, z: 2.67}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: HealSprite
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -7145,7 +7161,44 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     path: 
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6666667
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: HealSprite
+    classID: 212
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -7171,6 +7224,17 @@ AnimationClip:
       value: {fileID: 21300000, guid: 8f3e08d21a0113748a666fd98b867eee, type: 3}
     attribute: m_Sprite
     path: Skeleton/ROOT_Jnt/Shoulders_Jnt_01/Head_Jnt_01/Head_Jnt_02/FemmeProtagHead/F_Face_1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 968f93b342a8399479d9c6d193fb034c, type: 3}
+    - time: 0.71666664
+      value: {fileID: 21300000, guid: 56278908bc9c5684088cccd17d12412f, type: 3}
+    - time: 0.76666665
+      value: {fileID: 21300000, guid: 8a2b6fcb6f8157c44beb98139be98be6, type: 3}
+    attribute: m_Sprite
+    path: HealSprite
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -7489,6 +7553,13 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
+      path: 2872526454
+      attribute: 3305885265
+      script: {fileID: 0}
+      typeID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
       path: 3698832960
       attribute: 0
       script: {fileID: 0}
@@ -7497,6 +7568,13 @@ AnimationClip:
       isPPtrCurve: 1
     - serializedVersion: 2
       path: 1165944826
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 2872526454
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -7693,6 +7771,13 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 2280349079
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2872526454
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -8113,6 +8198,9 @@ AnimationClip:
     - {fileID: 21300000, guid: c0264032ba8341c4d93edd8cde80de5f, type: 3}
     - {fileID: 21300000, guid: ee5c93160419d4942b0ea92baa52f8f3, type: 3}
     - {fileID: 21300000, guid: 8f3e08d21a0113748a666fd98b867eee, type: 3}
+    - {fileID: 21300000, guid: 968f93b342a8399479d9c6d193fb034c, type: 3}
+    - {fileID: 21300000, guid: 56278908bc9c5684088cccd17d12412f, type: 3}
+    - {fileID: 21300000, guid: 8a2b6fcb6f8157c44beb98139be98be6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -34780,6 +34868,100 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalScale.z
     path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.6666667
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.8333333
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: HealSprite
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.6666667
+        value: -1.94
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: HealSprite
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.6666667
+        value: 4.84
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: HealSprite
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.6666667
+        value: 2.67
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: HealSprite
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:

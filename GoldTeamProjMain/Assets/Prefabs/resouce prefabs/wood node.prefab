@@ -89,6 +89,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7916023485646447840, guid: 9aae0a90c6d1afd46a875492c603f370, type: 3}
+      propertyPath: spawnHeight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916023485646447840, guid: 9aae0a90c6d1afd46a875492c603f370, type: 3}
       propertyPath: dropPrefab.Array.size
       value: 3
       objectReference: {fileID: 0}
