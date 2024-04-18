@@ -90,6 +90,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: GrassPatch_Small
+    second: {fileID: 2100000, guid: cfb15f5d6b5529540bc3da3ef1c855ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Grass_Rocks
     second: {fileID: 2100000, guid: feaed3430269f7344b318597a07cfcbb, type: 2}
   - first:
