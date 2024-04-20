@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0054205484, g: 0.007461444, b: 0.0037927034, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056526265, g: 0.00741408, b: 0.0038322224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1537,6 +1537,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 71129082570866762, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
+      propertyPath: onRaiseEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7752953111775798883, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1625,7 +1629,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: JoyCanvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1672560382, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf668194abea4948b0bcbff0059bc89, type: 3}
 --- !u!1001 &7425364377068386693
 PrefabInstance:
@@ -1745,7 +1750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8368989081503293071, guid: 01f5616b4c1a6364d96465c2e3a2cc71, type: 3}
       propertyPath: poolList.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8368989081503293071, guid: 01f5616b4c1a6364d96465c2e3a2cc71, type: 3}
       propertyPath: poolList.Array.data[0]
@@ -1758,7 +1763,11 @@ PrefabInstance:
     - target: {fileID: 8368989081503293071, guid: 01f5616b4c1a6364d96465c2e3a2cc71, type: 3}
       propertyPath: poolList.Array.data[2]
       value: 
-      objectReference: {fileID: 8916703189530511503, guid: 838a3a15d4b3c8748ba19b8a2c766fbc, type: 3}
+      objectReference: {fileID: 1083609361186208604, guid: 3e7640f22ca480646958d569681e1705, type: 3}
+    - target: {fileID: 8368989081503293071, guid: 01f5616b4c1a6364d96465c2e3a2cc71, type: 3}
+      propertyPath: poolList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1083609361186208604, guid: 3e7640f22ca480646958d569681e1705, type: 3}
     - target: {fileID: 8368989081503293071, guid: 01f5616b4c1a6364d96465c2e3a2cc71, type: 3}
       propertyPath: poolEvent.m_PersistentCalls.m_Calls.Array.size
       value: 0

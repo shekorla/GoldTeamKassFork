@@ -743,7 +743,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540666300}
   m_CullTransparentMesh: 1
---- !u!1 &557238440 stripped
+--- !u!1 &618899893 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
   m_PrefabInstance: {fileID: 1473193351}
@@ -882,6 +882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 82259cf0a8b96d244bab9ac73cd056cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c0c4f147f7babfd47b81d5009b0d61f7, type: 2}
     - target: {fileID: 919132149155446097, guid: 82259cf0a8b96d244bab9ac73cd056cd, type: 3}
       propertyPath: m_Name
       value: FemmeProtagHead
@@ -905,7 +909,7 @@ ParentConstraint:
   m_TranslationAtRest: {x: 0, y: 4.7150474, z: -0.009716034}
   m_RotationAtRest: {x: -0.23114192, y: 0, z: 0}
   m_TranslationOffsets:
-  - {x: 0, y: -0.5900006, z: -0.0018336512}
+  - {x: 0, y: -0.59000015, z: -0.0018336549}
   m_RotationOffsets:
   - {x: 0, y: 0, z: 0}
   m_AffectTranslationX: 1
@@ -5779,7 +5783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6193,11 +6197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 791cc5db58f7f6b4e89256e6d201708d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6258,10 +6262,10 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557238440}
+  m_GameObject: {fileID: 618899893}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f3bd5c64ffad2f940acb96061b2272f5, type: 2}
+  m_Controller: {fileID: 9100000, guid: a1ca3abe2aaee2e438686b5b5e5b6a2e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6271,6 +6275,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1473193356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618899893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0031d9c844c324c8246554c9934dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1473193355}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: F_Player_Dead
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1735558133
 GameObject:
   m_ObjectHideFlags: 0

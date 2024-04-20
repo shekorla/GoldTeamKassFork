@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 70e00ae01e40afc4ea60138ba0407599
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - butterflyPrefab: {fileID: 6132121315727392468, guid: 3a20d775b322be540bd08bf639cd4d56, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

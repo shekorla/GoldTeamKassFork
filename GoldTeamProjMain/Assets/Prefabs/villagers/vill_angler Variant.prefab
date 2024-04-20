@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7581147023434123717
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04499817
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621229709767984092, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.493721
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851766225313232166, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851766225313232166, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.024398804
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467913, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_Name
+      value: vill_angler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 65.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4558498442483467918, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085769675008549667, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+      propertyPath: m_Name
+      value: Head_Jnt_01test
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+--- !u!114 &2231203240095679771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8629871652933962974, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+  m_PrefabInstance: {fileID: 7581147023434123717}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6b5333e87abbc478e89901b2e17ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6230359701195525964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4558498442483467913, guid: 7765bc4a8a8681342a5e77369d248e4d, type: 3}
+  m_PrefabInstance: {fileID: 7581147023434123717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1055796868
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230359701195525964}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7146673565a0ab04ca44d0b8673f1bfe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1055796865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230359701195525964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f480a4d010153c44fad91012bb01f870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  villagerSettings: {fileID: 11400000, guid: 22f553f7f8d8b5144a2ce5de8c744665, type: 2}
+  playerTransform: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogue: {fileID: 0}
+  walkingAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2231203240095679771}
+        m_TargetAssemblyTypeName: IncrementalAnimationManager, Assembly-CSharp
+        m_MethodName: IncrementAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stopWalkingAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2231203240095679771}
+        m_TargetAssemblyTypeName: IncrementalAnimationManager, Assembly-CSharp
+        m_MethodName: DeincrementAnim
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  headJoint: {fileID: 0}
+  lookAtPlayerDistance: 20
+--- !u!195 &1055796869
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230359701195525964}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 5
+  m_Speed: 20
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 776.36
+  m_StoppingDistance: 5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
