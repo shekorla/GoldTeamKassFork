@@ -58623,6 +58623,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.23333333
+    functionName: InvokeSpecificAction
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 8c11e4d7d1945a4408d8db4cb16d7afe, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.41666666
     functionName: ResetAnim
     data: 
