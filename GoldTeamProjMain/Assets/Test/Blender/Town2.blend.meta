@@ -90,6 +90,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: GrassPatch_Small
+    second: {fileID: 2100000, guid: cfb15f5d6b5529540bc3da3ef1c855ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Grass_Rocks
     second: {fileID: 2100000, guid: feaed3430269f7344b318597a07cfcbb, type: 2}
   - first:
@@ -160,6 +165,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Riverbed_Pebbles
+    second: {fileID: 2100000, guid: 9b0162638c9758d48955a9e7c3c23fa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rocks
+    second: {fileID: 2100000, guid: 32bd1cd6329088940b3bfcfc8cff8b75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Roof_Metal
     second: {fileID: 2100000, guid: cf876547483c8ff44900048b471507d4, type: 2}
   - first:
@@ -202,6 +217,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Water_Pond
     second: {fileID: 2100000, guid: 8bd215ef4f06f14428095f4e97050069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Waterfall
+    second: {fileID: 2100000, guid: d5ab75c7f0d74604c92abf792c542002, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
