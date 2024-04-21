@@ -63295,3 +63295,10 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 1.1166667
+    functionName: InvokeSpecificAction
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 573377819b3405d4784561dbc6bd7009, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
