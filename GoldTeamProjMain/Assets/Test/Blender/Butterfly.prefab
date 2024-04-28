@@ -219,11 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bobSpeed: 0
   bobAmplitude: 0
-  player: {fileID: 0}
-  flyAreaSize: 27.27
   speed: 10
-  playerDetectionRadius: 5
-  circleRadius: 2
+  spawner: {fileID: 0}
 --- !u!1 &6992750862043889037
 GameObject:
   m_ObjectHideFlags: 0

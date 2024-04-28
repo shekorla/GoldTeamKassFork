@@ -32622,4 +32622,11 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.18333334
+    functionName: InvokeSpecificAction
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 13ea5ddc700ab2c499abbaa994dbb6b6, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

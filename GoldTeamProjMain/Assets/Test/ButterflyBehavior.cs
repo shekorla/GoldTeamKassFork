@@ -24,7 +24,7 @@ public class ButterflyBehavior : MonoBehaviour
         bobAmplitude = Random.Range(0.05f, 0.15f);
     }
 
-    void Update()
+   public  void FixedUpdate()
     {
         float step = speed * Time.deltaTime;
         cachedTransform.position = Vector3.MoveTowards(cachedTransform.position, randomDestination, step);
