@@ -63,5 +63,5 @@ Material:
     - _low_points: 0.9
     - _move_rate: 0.01
     m_Colors:
-    - _cutout_position: {r: 0.5, g: 0.3, b: 0, a: 0}
+    - _cutout_position: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
